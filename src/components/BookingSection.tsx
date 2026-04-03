@@ -1,7 +1,25 @@
 import { CalendarDays, Clock, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
+
+// ╔══════════════════════════════════════════════════════════════╗
+// ║  INSTRUKTION: Byt ut URL:en nedan mot din riktiga           ║
+// ║  Calendly-länk, t.ex. "https://calendly.com/ditt-namn"     ║
+// ║  Allt annat sköter sig själv – inklusive dubbelboknings-   ║
+// ║  skydd som hanteras automatiskt av Calendly.                ║
+// ╚══════════════════════════════════════════════════════════════╝
+const CALENDLY_URL = "https://calendly.com/ÄNDRA-TILL-DIN-LÄNK";
 
 const BookingSection = () => {
+  useEffect(() => {
+    // Load Calendly script once
+    if (!document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  }, []);
+
   return (
     <section id="boka" className="section-padding">
       <div className="container mx-auto">
@@ -18,7 +36,7 @@ const BookingSection = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
             {[
-              { icon: CalendarDays, text: "Välj datum" },
+              { icon: CalendarDays, text: "Välj tjänst" },
               { icon: Clock, text: "Välj tid" },
               { icon: CheckCircle2, text: "Klart!" },
             ].map((step, i) => (
@@ -32,17 +50,12 @@ const BookingSection = () => {
             ))}
           </div>
 
-          {/* Calendly placeholder */}
-          <div className="bg-card border border-border rounded-lg p-12 text-center mb-8">
-            <CalendarDays size={48} className="mx-auto text-accent/30 mb-4" />
-            <p className="text-muted-foreground mb-2">Bokningssystem laddas här</p>
-            <p className="text-xs text-muted-foreground/60 mb-6">
-              Plats för Calendly-widget eller annat bokningssystem
-            </p>
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-10">
-              <a href="tel:0702287249">Ring för att boka: 070-228 72 49</a>
-            </Button>
-          </div>
+          {/* Calendly inline widget */}
+          <div
+            className="calendly-inline-widget rounded-lg overflow-hidden border border-border mb-8"
+            data-url={CALENDLY_URL}
+            style={{ minWidth: "320px", height: "700px" }}
+          />
 
           <p className="text-center text-sm text-muted-foreground">
             Du kan även ringa oss direkt på{" "}
