@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Scissors size={20} />
-              <span className="font-heading text-lg font-semibold">Norrmalms Frisör</span>
+              <span className="font-heading text-lg font-semibold">Frisörsidan</span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Din lokala frisör i Skövde sedan många år. Vi brinner för att skapa frisyrer som gör dig glad.
@@ -38,7 +38,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 text-center">
           <p className="text-primary-foreground/50 text-sm">
-            Välkommen till Norrmalms Frisör — din frisör i Skövde
+            Välkommen till Frisörsidan — din frisör i Skövde
           </p>
         </div>
       </div>

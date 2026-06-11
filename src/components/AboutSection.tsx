@@ -28,7 +28,7 @@ const AboutSection = () => {
             Välkommen till din frisör i Skövde
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            På Norrmalms Frisör handlar allt om dig. Med lång erfarenhet och en genuin passion för hår 
+            På Frisörsidan handlar allt om dig. Med lång erfarenhet och en genuin passion för hår 
             skapar vi resultat som får dig att känna dig som bäst. Vår salong på Folkungagatan är en 
             lugn oas där du kan slappna av medan vi tar hand om ditt hår med omsorg och precision.
           </p>
