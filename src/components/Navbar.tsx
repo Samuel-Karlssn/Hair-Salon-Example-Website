@@ -27,9 +27,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#" className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-foreground">
-          Frisörsidan
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="#" className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-foreground">
+            Frisörsidan
+          </a>
+          <span className="text-[10px] md:text-xs font-medium text-destructive bg-destructive/10 px-2 py-1 rounded-full whitespace-nowrap">
+            Inte en riktigt frisör, endast exempel sida
+          </span>
+        </div>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
@@ -70,8 +75,8 @@ const Navbar = () => {
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full mt-2">
               <a href="#boka" onClick={() => setIsOpen(false)}>Boka tid</a>
             </Button>
-            <a href="tel:0702287249" className="flex items-center gap-2 text-muted-foreground text-sm mt-2">
-              <Phone size={16} /> 070-228 72 49
+            <a href="tel:0701234567" className="flex items-center gap-2 text-muted-foreground text-sm mt-2">
+              <Phone size={16} /> 070-123 45 67
             </a>
           </div>
         </div>

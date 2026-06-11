@@ -59,8 +59,8 @@ const BookingSection = () => {
 
           <p className="text-center text-sm text-muted-foreground">
             Du kan även ringa oss direkt på{" "}
-            <a href="tel:0702287249" className="text-accent hover:underline font-medium">
-              070-228 72 49
+            <a href="tel:0701234567" className="text-accent hover:underline font-medium">
+              070-123 45 67
             </a>
           </p>
         </div>

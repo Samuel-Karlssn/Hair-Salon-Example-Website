@@ -36,7 +36,7 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-medium text-foreground mb-1">Adress</h3>
                 <p className="text-muted-foreground text-sm">
-                  Folkungagatan 20A<br />549 54 Skövde
+                  Storgatan 12<br />541 30 Skövde
                 </p>
               </div>
             </div>
@@ -44,8 +44,8 @@ const ContactSection = () => {
               <Phone size={20} className="text-accent flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-medium text-foreground mb-1">Telefon</h3>
-                <a href="tel:0702287249" className="text-muted-foreground text-sm hover:text-accent transition-colors">
-                  070-228 72 49
+                <a href="tel:0701234567" className="text-muted-foreground text-sm hover:text-accent transition-colors">
+                  070-123 45 67
                 </a>
               </div>
             </div>
