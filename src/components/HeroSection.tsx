@@ -19,7 +19,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto text-center px-5">
         <p className="text-sm md:text-base font-medium tracking-[0.2em] uppercase text-accent mb-4 animate-fade-in-up">
-          Norrmalms Frisör
+          Frisörsidan
         </p>
         <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 text-balance animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
           Din lokala frisör<br className="hidden md:block" /> i Skövde

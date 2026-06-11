@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#" className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-foreground">
-          Norrmalms Frisör
+          Frisörsidan
         </a>
 
         {/* Desktop */}
