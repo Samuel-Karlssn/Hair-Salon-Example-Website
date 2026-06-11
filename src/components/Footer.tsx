@@ -27,10 +27,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4">Kontakt</h4>
             <div className="text-primary-foreground/70 text-sm space-y-1.5">
-              <p>Folkungagatan 20A</p>
-              <p>549 54 Skövde</p>
-              <a href="tel:0702287249" className="block hover:text-primary-foreground transition-colors">
-                070-228 72 49
+              <p>Storgatan 12</p>
+              <p>541 30 Skövde</p>
+              <a href="tel:0701234567" className="block hover:text-primary-foreground transition-colors">
+                070-123 45 67
               </a>
             </div>
           </div>

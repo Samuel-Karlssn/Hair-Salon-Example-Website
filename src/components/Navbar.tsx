@@ -70,8 +70,8 @@ const Navbar = () => {
             <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 w-full mt-2">
               <a href="#boka" onClick={() => setIsOpen(false)}>Boka tid</a>
             </Button>
-            <a href="tel:0702287249" className="flex items-center gap-2 text-muted-foreground text-sm mt-2">
-              <Phone size={16} /> 070-228 72 49
+            <a href="tel:0701234567" className="flex items-center gap-2 text-muted-foreground text-sm mt-2">
+              <Phone size={16} /> 070-123 45 67
             </a>
           </div>
         </div>
