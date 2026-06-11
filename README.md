@@ -1,4 +1,4 @@
-# Skövde Hair Style
+# Hair Salon Example
 
 En modern webbplats för en frisörsalong utvecklad med React, TypeScript och Tailwind CSS.
 
