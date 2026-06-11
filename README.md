@@ -1,3 +1,18 @@
-# Welcome to your Lovable project
+# Skövde Hair Style
 
-TODO: Document your project here
+En modern webbplats för en frisörsalong utvecklad med React, TypeScript och Tailwind CSS.
+
+## Funktioner
+
+- Responsiv design
+- Tidsbokningsinformation
+- Tjänsteöversikt
+- Kontaktuppgifter
+- Mobilanpassat gränssnitt
+
+## Tekniker
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
