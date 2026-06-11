@@ -27,9 +27,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#" className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-foreground">
-          Frisörsidan
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="#" className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-foreground">
+            Frisörsidan
+          </a>
+          <span className="hidden sm:inline-block text-[10px] md:text-xs font-medium text-destructive bg-destructive/10 px-2 py-1 rounded-full">
+            Inte en riktigt frisör, endast exempel sida
+          </span>
+        </div>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
