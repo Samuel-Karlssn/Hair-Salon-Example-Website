@@ -31,7 +31,7 @@ const Navbar = () => {
           <a href="#" className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-foreground">
             Frisörsidan
           </a>
-          <span className="hidden sm:inline-block text-[10px] md:text-xs font-medium text-destructive bg-destructive/10 px-2 py-1 rounded-full">
+          <span className="text-[10px] md:text-xs font-medium text-destructive bg-destructive/10 px-2 py-1 rounded-full whitespace-nowrap">
             Inte en riktigt frisör, endast exempel sida
           </span>
         </div>
